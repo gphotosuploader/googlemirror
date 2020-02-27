@@ -16,7 +16,7 @@ import (
 	"net/url"
 	"strings"
 
-	"google.golang.org/api/googleapi/internal/uritemplates"
+	"github.com/gphotosuploader/googlemirror/api/googleapi/internal/uritemplates"
 )
 
 // ContentTyper is an interface for Readers which know (or would like
