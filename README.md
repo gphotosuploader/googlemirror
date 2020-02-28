@@ -1,6 +1,6 @@
 # googlemirror
 
-[![Build Status](https://cloud.drone.io/api/badges/gphotosuploader/googlemirror/status.svg)](https://cloud.drone.io/gphotosuploader/googlemirror)
+![Build Status](https://github.com/gphotosuploader/googlemirror/workflows/Go/badge.svg)
 [![GitHub release](https://img.shields.io/github/release/gphotosuploader/googlemirror.svg)](https://github.com/gphotosuploader/googlemirror/releases/latest)
 [![GitHub](https://img.shields.io/github/license/gphotosuploader/googlemirror.svg)](LICENSE)
 
