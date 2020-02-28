@@ -2,8 +2,9 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
+// NOTE: This is not auto-generated code anymore, has been patched to use internal `gensupport` package.
+
 // AUTO-GENERATED CODE. DO NOT EDIT.
-// NOTE: This auto-generated code has been patched to use vendored packages.
 
 // Package photoslibrary provides access to the Photos Library API.
 //
@@ -28,8 +29,8 @@ import (
 	"strconv"
 	"strings"
 
-	gensupport "github.com/gphotosuploader/googlemirror/api/gensupport"
-	googleapi "github.com/gphotosuploader/googlemirror/api/googleapi"
+	gensupport "github.com/gphotosuploader/googlemirror/api/photoslibrary/v1/internal/gensupport"
+	googleapi "google.golang.org/api/googleapi"
 )
 
 // Always reference these packages, just in case the auto-generated code

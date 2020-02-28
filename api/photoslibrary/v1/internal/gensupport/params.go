@@ -2,14 +2,12 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
-// NOTE: This version has been patched to use vendored googleapi package.
-
 package gensupport
 
 import (
 	"net/url"
 
-	googleapi "github.com/gphotosuploader/googlemirror/api/googleapi"
+	"google.golang.org/api/googleapi"
 )
 
 // URLParams is a simplified replacement for url.Values
@@ -45,6 +43,7 @@ func (u URLParams) Encode() string {
 	return url.Values(u).Encode()
 }
 
+// SetOptions sets the URL params and any additional call options.
 func SetOptions(u URLParams, opts ...googleapi.CallOption) {
 	for _, o := range opts {
 		u.Set(o.Get())
