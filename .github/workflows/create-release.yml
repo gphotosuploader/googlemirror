@@ -25,6 +25,6 @@ jobs:
             Changes in this Release
             - First Change
             - Second Change
-            See [CHANGELOG)(https://github.com/gphotosuploader/googlemirror/blob/master/CHANGELOG.md) for more details.
+            See [CHANGELOG](https://github.com/gphotosuploader/googlemirror/blob/master/CHANGELOG.md) for more details.
           draft: false
           prerelease: false
