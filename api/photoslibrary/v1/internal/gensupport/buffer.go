@@ -2,18 +2,17 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
-// NOTE: This version has been patched to use vendored googleapi package.
-
 package gensupport
 
 import (
 	"bytes"
 	"io"
 
-	googleapi "github.com/gphotosuploader/googlemirror/api/googleapi"
+	"google.golang.org/api/googleapi"
 )
 
-// MediaBuffer buffers data from an io.Reader to support uploading media in retryable chunks.
+// MediaBuffer buffers data from an io.Reader to support uploading media in
+// retryable chunks. It should be created with NewMediaBuffer.
 type MediaBuffer struct {
 	media io.Reader
 
@@ -24,6 +23,7 @@ type MediaBuffer struct {
 	off int64
 }
 
+// NewMediaBuffer initializes a MediaBuffer.
 func NewMediaBuffer(media io.Reader, chunkSize int) *MediaBuffer {
 	return &MediaBuffer{media: media, chunk: make([]byte, 0, chunkSize)}
 }
