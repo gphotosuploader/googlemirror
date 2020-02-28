@@ -1,0 +1,57 @@
+---
+kind: pipeline
+name: test
+
+platform:
+  os: linux
+  arch: amd64
+
+steps:
+  - name: test-build
+    image: golang:1.13
+    commands:
+      - make test
+      - make build
+
+trigger:
+  branch:
+    exclude:
+      - master
+
+---
+kind: pipeline
+name: test-master-go-1-13
+
+platform:
+  os: linux
+  arch: amd64
+
+steps:
+  - name: test-build
+    image: golang:1.13
+    commands:
+      - make test
+      - make build
+
+trigger:
+  branch:
+    - master
+
+---
+kind: pipeline
+name: test-master-go-1-12
+
+platform:
+  os: linux
+  arch: amd64
+
+steps:
+  - name: test-build
+    image: golang:1.12
+    commands:
+      - make test
+      - make build
+
+trigger:
+  branch:
+    - master
