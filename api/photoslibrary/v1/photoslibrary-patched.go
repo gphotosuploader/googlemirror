@@ -241,7 +241,7 @@ type Album struct {
 	Title string `json:"title,omitempty"`
 
 	// TotalMediaItems: [Output only] The number of media items in the album
-	TotalMediaItems int64 `json:"totalMediaItems,omitempty,string"`
+	TotalMediaItems int64 `json:"mediaItemsCount,omitempty,string"`
 
 	// ServerResponse contains the HTTP response code and headers from the
 	// server.
