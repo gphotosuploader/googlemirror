@@ -4,9 +4,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/) and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## Unreleased
-### Changed
-- CI/CD is done by GitHub actions instead of drone.
 
+## v0.3.6
+### Changed
+- CI/CD is done by GitHub actions instead of Drone.
+### Fixed
+- Field `TotalMediaItems` on `Album` struct was referring to a non existing json field on the response. Thanks [@kelvie](https://github.com/kelvie) for fixing it. ([#6][i6])
+
+[i6]: https://github.com/gphotosuploader/googlemirror/pull/6
+ 
 ## v0.3.5
 ### Added
 - Go module support to deal with package dependencies.
