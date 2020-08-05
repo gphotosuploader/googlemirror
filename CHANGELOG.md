@@ -5,6 +5,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/) and this 
 
 ## Unreleased
 
+## v0.3.7
+### Added
+- Support for [photoslibrary.albums.batchAddMediaItems](https://developers.google.com/photos/library/reference/rest/v1/albums/batchAddMediaItems). Thanks to [@albertvaka](https://github.com/albertvaka) ([#8][i8])
+
+[i8]: https://github.com/gphotosuploader/googlemirror/pull/8
+
 ## v0.3.6
 ### Changed
 - CI/CD is done by GitHub actions instead of Drone.
