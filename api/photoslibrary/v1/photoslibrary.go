@@ -28,8 +28,9 @@ import (
 	"strconv"
 	"strings"
 
-	gensupport "github.com/gphotosuploader/googlemirror/api/photoslibrary/v1/internal/gensupport"
 	googleapi "google.golang.org/api/googleapi"
+
+	gensupport "github.com/gphotosuploader/googlemirror/api/photoslibrary/v1/internal/gensupport"
 )
 
 // Always reference these packages, just in case the auto-generated code
@@ -2348,6 +2349,14 @@ func (c *AlbumsListCall) PageSize(pageSize int64) *AlbumsListCall {
 // listAlbums request.
 func (c *AlbumsListCall) PageToken(pageToken string) *AlbumsListCall {
 	c.urlParams_.Set("pageToken", pageToken)
+	return c
+}
+
+// ExcludeNonAppCreatedData sets the optional parameter "excludeNonAppCreatedData":
+// If set, the results exclude media items that were not created by this app. This
+// field is ignored if the PhotoslibraryReadonlyAppcreateddataScope scope is used.
+func (c *AlbumsListCall) ExcludeNonAppCreatedData() *AlbumsListCall {
+	c.urlParams_.Set("excludeNonAppCreatedData", "true")
 	return c
 }
 

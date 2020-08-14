@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/) and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## Unreleased
+
+## v0.4.0
+### Changed
+- `excludeNonAppCreatedData` parameter to [albums.list](https://developers.google.com/photos/library/reference/rest/v1/albums/list). If set, the results exclude media items that were not created by the app. By default all albums are returned.
+### Fixed
+- A new API method was added in v0.3.7, but [Semantic Versioning](https://semver.org/) implies that a MINOR version should had been released.
 ### Removed
 - API definition file (`api/photoslibrary/v1/photoslibrary-api.json`) is removed in favor of [Photos Library API](https://developers.google.com/photos/library/reference/rest) documentation site.
 
