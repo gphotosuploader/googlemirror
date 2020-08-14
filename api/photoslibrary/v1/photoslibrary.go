@@ -2,9 +2,8 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
-// NOTE: This is not auto-generated code anymore, has been patched to use internal `gensupport` package.
-
-// AUTO-GENERATED CODE. DO NOT EDIT.
+// NOTE: This is not auto-generated code anymore, has been modified to implement several fixes / features,
+// see CHANGELOG.md for more details.
 
 // Package photoslibrary provides access to the Photos Library API.
 //

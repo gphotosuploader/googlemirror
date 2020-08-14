@@ -4,6 +4,8 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/) and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## Unreleased
+### Removed
+- API definition file (`api/photoslibrary/v1/photoslibrary-api.json`) is removed in favor of [Photos Library API](https://developers.google.com/photos/library/reference/rest) documentation site.
 
 ## v0.3.7
 ### Added
