@@ -1114,6 +1114,10 @@ type MediaItem struct {
 	// info section in the Google Photos app.
 	Description string `json:"description,omitempty"`
 
+	// Filename: Filename of the media item. This is shown to the user in the
+	// item's info section in the Google Photos app.
+	Filename string `json:"filename,omitempty"`
+
 	// Id: Identifier for the media item. This is a persistent identifier
 	// that can be
 	// used between sessions to identify this media item.
