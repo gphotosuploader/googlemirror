@@ -1,5 +1,6 @@
 # googlemirror
 
+[![PkgGoDev](https://pkg.go.dev/badge/github.com/gphotosuploader/googlemirror/api/photoslibrary/v1)](https://pkg.go.dev/github.com/gphotosuploader/googlemirror/api/photoslibrary/v1)
 ![Build Status](https://github.com/gphotosuploader/googlemirror/workflows/Go/badge.svg)
 [![GitHub release](https://img.shields.io/github/release/gphotosuploader/googlemirror.svg)](https://github.com/gphotosuploader/googlemirror/releases/latest)
 [![GitHub](https://img.shields.io/github/license/gphotosuploader/googlemirror.svg)](LICENSE)

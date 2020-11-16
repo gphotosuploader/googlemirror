@@ -5,6 +5,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/) and this 
 
 ## Unreleased
 
+## v0.5.0
+### Added
+- Add support for `MediaItem.Filename`. It was present on [Google Photos documentation](https://developers.google.com/photos/library/reference/rest/v1/mediaItems#resource:-mediaitem) but It wasn't implemented on this API. Thanks [@parkeroth](https://github.com/parkeroth) for adding it. ([#12][i12])
+- Add a badge on README pointing to documentation: [![PkgGoDev](https://pkg.go.dev/badge/github.com/gphotosuploader/googlemirror/api/photoslibrary/v1)](https://pkg.go.dev/github.com/gphotosuploader/googlemirror/api/photoslibrary/v1)
+
+[i12]: https://github.com/gphotosuploader/googlemirror/pull/12
+
 ## v0.4.0
 ### Changed
 - `excludeNonAppCreatedData` parameter to [albums.list](https://developers.google.com/photos/library/reference/rest/v1/albums/list). If set, the results exclude media items that were not created by the app. By default all albums are returned.
