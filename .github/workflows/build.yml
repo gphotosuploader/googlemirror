@@ -1,5 +1,9 @@
 name: Build
-on: [push]
+on:
+  pull_request:
+  push:
+  schedule:
+    - cron: 0 0 * * 0
 jobs:
   build:
     strategy:
@@ -8,11 +12,11 @@ jobs:
         os: [ubuntu-latest, macos-latest]
     runs-on: ${{ matrix.os }}
     steps:
-    - name: Install Go
-      uses: actions/setup-go@v2
-      with:
-        go-version: ${{ matrix.go-version }}
-    - name: Checkout code
-      uses: actions/checkout@v2
-    - name: Build
-      run: make build
+      - name: Install Go
+        uses: actions/setup-go@v2
+        with:
+          go-version: ${{ matrix.go-version }}
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Build
+        run: make build
